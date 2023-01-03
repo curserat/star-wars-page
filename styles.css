@@ -195,7 +195,7 @@ a {
     align-items: center;
     gap: 8px;
     margin: 10px 15px;
-    transition: .3s ease
+    transition: .3s ease;
 }
 
 .block2 .card:hover{
