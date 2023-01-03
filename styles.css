@@ -1,11 +1,13 @@
 @font-face {
     font-family: jedi;
-    src:url(fonts/jedi/Starjedi.ttf);
+    src: url(fonts/jedi/Starjedi.ttf);
 }
+
 @font-face {
     font-family: jedihol;
-    src:url(fonts/jedi/Starjhol.ttf);
+    src: url(fonts/jedi/Starjhol.ttf);
 }
+
 body {
     margin: 0;
     font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
@@ -13,11 +15,11 @@ body {
 }
 
 .wrapper {
-    max-height:100vh;
-    overflow-x:hidden;
-    display:flex;
-    flex-direction:column;
-    background-image:url(images/space-g6126127b5_1920.png);
+    max-height: 100vh;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/space-g6126127b5_1920.png);
 }
 
 .block0,
@@ -48,7 +50,7 @@ body {
     width: 1920px;
     display: flex;
     justify-content: center;
-    align-items:center;
+    align-items: center;
     flex: initial;
     margin: 0 auto;
 }
@@ -74,11 +76,11 @@ body {
     gap: 20px;
 }
 
-.block0 .logo img{
-    display:flex;
-    flex:none;
-    height:auto;
-    width:40px;
+.block0 .logo img {
+    display: flex;
+    flex: none;
+    height: auto;
+    width: 40px;
 }
 
 .block0 .title {
@@ -89,7 +91,7 @@ body {
 
 ul {
     display: flex;
-    list-style-type:none;
+    list-style-type: none;
     padding: 0;
     margin: 0;
     gap: 16px;
@@ -113,9 +115,10 @@ button {
 
 /* ----- Top Section ----- */
 
-.block1{
-    height:100vh;
+.block1 {
+    height: 100vh;
 }
+
 .block1 .container {
     padding: 100px 32px;
 }
@@ -126,12 +129,15 @@ button {
     justify-content: space-between;
     gap: 100px;
     max-width: 1200px;
+
 }
 
 .block1 .textbox {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    background-color: rgba(0, 0, 0, 0.701);
+    padding: 20px 20px;
 }
 
 .block1 .maintext {
@@ -189,45 +195,75 @@ a {
     align-items: center;
     gap: 8px;
     margin: 10px 15px;
+    transition: .3s ease
 }
 
+.block2 .card:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+/* css for boxes */
 .block2 .placeholder {
     height: 157px;
     width: 157px;
-    border: 4px solid #F9FAF8;
+    border: 5px solid #F9FAF8;
     border-radius: 10px;
-    
 }
 
-/* colors for boxes */
-.block2 .placeholder.red{
-    box-shadow: inset 0 0 1em red,
-                0 0 1em red;
+.block2 .placeholder.red {
+    object-fit: cover;
+    object-position:15% 0;
+    box-shadow: inset 0 0 1em hsl(360 100% 51% /1),
+    0 0 1em hsl(360 100% 51% / 1),
+    0 0 1.5em hsl(360 100% 51% / .75);
 }
 
-.block2 .placeholder.green{
-    box-shadow: inset 0 0 1em rgb(31, 255, 2),
-                0 0 1em rgb(31, 255, 2);
-}
-.block2 .placeholder.blue{
-    box-shadow: inset 0 0 1em rgb(0, 153, 255),
-                0 0 1em rgb(0, 153, 255);
-}
-.block2 .placeholder.purple{
-    box-shadow: inset 0 0 1em rgb(204, 0, 255),
-                0 0 1em rgb(204, 0, 255);
+.block2 .placeholder.green {
+    object-fit: cover;
+    object-position: 50% 0;
+    box-shadow: inset 0 0 1em hsl(120 100% 51% /1),
+    0 0 1em hsl(120 100% 51% / 1),
+    0 0 1.5em hsl(120 100% 51% / .75),
+    0 0 2em hsl(120 100% 51% / .5);
 }
 
-.block2 .placeholder.yellow{
-    box-shadow: inset 0 0 1em rgb(255, 217, 0),
-                0 0 1em rgb(255, 217, 0);
+.block2 .placeholder.blue {
+    object-fit: cover;
+    object-position:40% 0;
+    box-shadow: inset 0 0 1em hsl(208 100% 51% /1),
+    0 0 1em hsl(208 100% 51% / 1),
+    0 0 1.5em hsl(208 100% 51% / .75),
+    0 0 2em hsl(208 100% 51% / .5);
 }
 
-.block2 .placeholder.dark{
-    box-shadow: inset 0 0 1em rgb(255, 255, 255),
-                0 0 1em rgb(255, 255, 255);
-    border-color:#000000;
+.block2 .placeholder.purple {
+    object-fit: cover;
+    object-position: 30% 0%;
+    box-shadow: inset 0 0 1em hsl(280 100% 51% /1),
+    0 0 1em hsl(280 100% 51% / 1),
+    0 0 1.5em hsl(280 100% 51% / .75),
+    0 0 2em hsl(280 100% 51% / .5);
 }
+
+.block2 .placeholder.yellow {
+    object-fit: cover;
+    object-position: 50% 40%;
+    box-shadow: inset 0 0 1em hsl(50 100% 51% /1),
+    0 0 1em hsl(50 100% 51% / 1),
+    0 0 1.5em hsl(50 100% 51% / .75);
+}
+
+.block2 .placeholder.dark {
+    object-fit: cover;
+    object-position: 40% 0;
+    box-shadow: 0 0 1em hsl(0 100% 100% /1),
+    0 0 1em hsl(0 100% 100% / 1),
+    0 0 0.3em hsl(0 100% 100% / .75);
+    border-color: #000000;
+}
+
+/* ----- end of code ----- */
 
 .block2 .subtext {
     font-size: 18px;
@@ -264,7 +300,7 @@ a {
     display: flex;
     justify-content: flex-end;
     margin-right: 60px;
-    color:#d5a30b;
+    color: #d5a30b;
 }
 
 /* ----- Call to Action Section ----- */
@@ -274,13 +310,13 @@ a {
 
 .block4 .content {
     background-color: #000000;
-    border:3px solid #F9FAF8;
+    border: 3px solid #F9FAF8;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex: auto;
     flex-wrap: wrap;
-    gap:20px;
+    gap: 20px;
     padding: 50px 100px;
     border-radius: 8px;
     max-width: 850px;
