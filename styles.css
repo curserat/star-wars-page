@@ -1,0 +1,330 @@
+@font-face {
+    font-family: jedi;
+    src:url(fonts/jedi/Starjedi.ttf);
+}
+@font-face {
+    font-family: jedihol;
+    src:url(fonts/jedi/Starjhol.ttf);
+}
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', sans-serif;
+    background-color: #1F2937;
+}
+
+.wrapper {
+    max-height:100vh;
+    overflow-x:hidden;
+    display:flex;
+    flex-direction:column;
+    background-image:url(images/space-g6126127b5_1920.png);
+}
+
+.block0,
+.block3,
+.footer {
+    background-color: #000000;
+}
+
+.block2,
+.block4 {
+    background-color: rgba(0, 0, 0, 0.701);
+}
+
+.block0,
+.block1,
+.block2,
+.block3,
+.block4,
+.footer {
+    display: flex;
+}
+
+.block1 .container,
+.block2 .container,
+.block3 .container,
+.block4 .container,
+.footer .container {
+    width: 1920px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex: initial;
+    margin: 0 auto;
+}
+
+/* ----- Header Section ----- */
+.block0 .container {
+    display: flex;
+    flex: auto;
+    margin: 0 auto;
+    padding: 8px 32px;
+}
+
+.block0 .header {
+    display: flex;
+    justify-content: space-between;
+    flex: auto;
+    align-items: center;
+}
+
+.block0 .logo {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.block0 .logo img{
+    display:flex;
+    flex:none;
+    height:auto;
+    width:40px;
+}
+
+.block0 .title {
+    font-family: jedi;
+    font-size: 24px;
+    color: #d5a30b;
+}
+
+ul {
+    display: flex;
+    list-style-type:none;
+    padding: 0;
+    margin: 0;
+    gap: 16px;
+}
+
+.block0 a {
+    text-decoration: none;
+}
+
+button {
+    height: 35px;
+    width: 100px;
+    background-color: black;
+    border-radius: 4px;
+    border-color: #F9FAF8;
+    color: #F9FAF8;
+    font-weight: bold;
+    flex: none;
+    padding: 6px;
+}
+
+/* ----- Top Section ----- */
+
+.block1{
+    height:100vh;
+}
+.block1 .container {
+    padding: 100px 32px;
+}
+
+.block1 .content {
+    display: flex;
+    flex: auto;
+    justify-content: space-between;
+    gap: 100px;
+    max-width: 1200px;
+}
+
+.block1 .textbox {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.block1 .maintext {
+    font-size: 48px;
+    color: #1fd2e6;
+}
+
+.block1 .subtext,
+a {
+    font-size: 18px;
+    color: #E5E7EB;
+}
+
+.block1 .placeholder {
+    height: 280px;
+    width: 600px;
+    background-color: grey;
+    display: flex;
+    flex: none;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ----- Legends Section ----- */
+
+.block2 .container {
+    padding: 50px 32px 100px 32px;
+}
+
+.block2 .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.block2 .maintext {
+    font-size: 36px;
+    font-weight: 800;
+    color: #F9FAF8;
+    text-align: center;
+}
+
+.block2 .deck {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.block2 .card {
+    max-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 15px;
+}
+
+.block2 .placeholder {
+    height: 157px;
+    width: 157px;
+    border: 4px solid #F9FAF8;
+    border-radius: 10px;
+    
+}
+
+/* colors for boxes */
+.block2 .placeholder.red{
+    box-shadow: inset 0 0 1em red,
+                0 0 1em red;
+}
+
+.block2 .placeholder.green{
+    box-shadow: inset 0 0 1em rgb(31, 255, 2),
+                0 0 1em rgb(31, 255, 2);
+}
+.block2 .placeholder.blue{
+    box-shadow: inset 0 0 1em rgb(0, 153, 255),
+                0 0 1em rgb(0, 153, 255);
+}
+.block2 .placeholder.purple{
+    box-shadow: inset 0 0 1em rgb(204, 0, 255),
+                0 0 1em rgb(204, 0, 255);
+}
+
+.block2 .placeholder.yellow{
+    box-shadow: inset 0 0 1em rgb(255, 217, 0),
+                0 0 1em rgb(255, 217, 0);
+}
+
+.block2 .placeholder.dark{
+    box-shadow: inset 0 0 1em rgb(255, 255, 255),
+                0 0 1em rgb(255, 255, 255);
+    border-color:#000000;
+}
+
+.block2 .subtext {
+    font-size: 18px;
+    color: white;
+    text-align: center;
+}
+
+/* ----- Quote Section ----- */
+
+.block3 .container {
+    display: flex;
+    justify-content: center;
+    flex: initial;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 32px;
+}
+
+.block3 .content {
+    display: flex;
+    flex-direction: column;
+    max-width: 900px;
+}
+
+.block3 .quote {
+    font-size: 36px;
+    font-style: italic;
+    color: #F9FAF8;
+}
+
+.block3 .source {
+    font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+    color:#d5a30b;
+}
+
+/* ----- Call to Action Section ----- */
+.block4 .container {
+    padding: 100px 32px;
+}
+
+.block4 .content {
+    background-color: #000000;
+    border:3px solid #F9FAF8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: auto;
+    flex-wrap: wrap;
+    gap:20px;
+    padding: 50px 100px;
+    border-radius: 8px;
+    max-width: 850px;
+}
+
+.block4 .textbox {
+    color: #F9FAF8;
+}
+
+.block4 .maintext {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.block4 .subtext {
+    font-size: 18px;
+}
+
+/* ----- Footer Section ----- */
+.footer .container {
+    display: flex;
+    justify-content: center;
+    padding: 35px 32px;
+}
+
+.footer .text {
+    color: #F9FAF8;
+}
+
+/* ----- For Hiding Elements ----- */
+@media (max-width: 1350px) {
+    .block1 .placeholder {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .block0 .title {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    a {
+        display: none;
+    }
+}
