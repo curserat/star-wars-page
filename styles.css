@@ -89,19 +89,24 @@ body {
     color: #d5a30b;
 }
 
-ul {
+.block0 ul {
     display: flex;
     list-style-type: none;
     padding: 0;
     margin: 0;
-    gap: 16px;
+    gap:20px;
 }
 
 .block0 a {
     text-decoration: none;
+
 }
 
-button {
+.block0 a:hover {
+    text-decoration:underline;
+}
+
+.block1 button, .block4 button {
     height: 35px;
     width: 100px;
     background-color: black;
@@ -129,14 +134,14 @@ button {
     justify-content: space-between;
     gap: 100px;
     max-width: 1200px;
-
+    padding: 32px 32px;
+    background-color: rgba(0, 0, 0, 0.701);
 }
 
 .block1 .textbox {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: rgba(0, 0, 0, 0.701);
     padding: 20px 20px;
 }
 
@@ -200,6 +205,9 @@ a {
 
 .block2 .card:hover{
     transform: scale(1.15);
+}
+
+.block2 .placeholder:hover{
     cursor: pointer;
 }
 
@@ -299,7 +307,6 @@ a {
     font-weight: bold;
     display: flex;
     justify-content: flex-end;
-    margin-right: 60px;
     color: #d5a30b;
 }
 
