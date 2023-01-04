@@ -360,7 +360,7 @@ a {
 }
 
 @media (max-width: 800px) {
-    a {
+    .block0 a {
         display: none;
     }
 }
